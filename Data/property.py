@@ -26,20 +26,20 @@ LOG_FILE_NAME = "NSXSetup.log"
 
 # Property Related to vCenter
 
-COMPUTE_MANAGER_IP = "10.172.109.23"
-COMPUTE_MANAGER_USER =  "root"
-COMPUTE_MANAGER_PASS =  "Admin!23"
-COMPUTE_MANAGER_LOCAL_USER = "Administrator@skyscraper.local"
-COMPUTE_MANAGER_LOCAL_PASS = "Admin!23"
+COMPUTE_MANAGER_IP = None
+COMPUTE_MANAGER_USER =  None
+COMPUTE_MANAGER_PASS =  None
+COMPUTE_MANAGER_LOCAL_USER = None
+COMPUTE_MANAGER_LOCAL_PASS = None
 
 
 
 
 
 #Property related to NSX Manager
-NSX_MANAGER_IP =  "10.173.203.47"
-NSX_MANAGER_USER = "admin"
-NSX_MANAGER_PASS = "Admin!23"
+NSX_MANAGER_IP =  None
+NSX_MANAGER_USER = None,
+NSX_MANAGER_PASS = None,
 
 
 
@@ -48,7 +48,7 @@ NSX_MANAGER_PASS = "Admin!23"
 #Property related to Control Cluster Deployment
 
 SKIP_CONTROLLER_CREATION = False
-CONTROLLER_DATACENTER = "Datacenter3"
+CONTROLLER_DATACENTER = None
 
 CONTROL_CLUSTER = {
 
@@ -56,56 +56,56 @@ CONTROL_CLUSTER = {
 
     "controller_0" :{
 
-        "CONTROLLER_datastore" :  "Shared-1",
-        "CONTROLLER_cluster" : "NSXT-MGMT",
-        "CONTROLLER_host" : "sc2-hs1-b2819.eng.vmware.com",
-        "CONTROLLER_management_network" : "VM-Traffic",
-        "CONTROLLER_audit_password" : 'Admin!23',
+        "CONTROLLER_datastore" :  None,
+        "CONTROLLER_cluster" : None,
+        "CONTROLLER_host" : None,
+        "CONTROLLER_management_network" : None,
+        "CONTROLLER_audit_password" : '',
         "CONTROLLER_audit_username" : 'admin',
-        "CONTROLLER_cli_password" : 'Admin!23',
+        "CONTROLLER_cli_password" : '',
         "CONTROLLER_cli_username" : 'admin',
-        "CONTROLLER_root_password" : 'Admin!23',
-        "CONTROLLER_ip_addresses" : "10.173.203.48",
-        "CONTROLLER_prefix_length" : 25,
+        "CONTROLLER_root_password" : '',
+        "CONTROLLER_ip_addresses" : None,
+        "CONTROLLER_prefix_length" : None,
         "CONTROLLER_default_gateway_addresses" : ['10.173.203.125'],
         "CONTROLLER_dns_servers" : ['10.172.40.1','10.172.40.2'],
-        "CONTROLLER_hostname" : "sc2hs1-stls-vm18.eng.vmware.com",
-        "CONTROLLER_ntp_servers_fqdn" : ["time.eng.vmware.com"],
+        "CONTROLLER_hostname" : None,
+        "CONTROLLER_ntp_servers_fqdn" : ['time.eng.vmware.com'],
         "CONTROLLER_form_factor" : 'MEDIUM'
     },
     "controller_1" :{
-        "CONTROLLER_datastore" :  "Shared-1",
-        "CONTROLLER_cluster" : "NSXT-MGMT",
-        "CONTROLLER_host" : "sc2-hs1-b2819.eng.vmware.com",
-        "CONTROLLER_management_network" : "VM-Traffic",
-        "CONTROLLER_audit_password" : 'Admin!23',
+        "CONTROLLER_datastore" :  None,
+        "CONTROLLER_cluster" : None,
+        "CONTROLLER_host" : None,
+        "CONTROLLER_management_network" : None,
+        "CONTROLLER_audit_password" : '',
         "CONTROLLER_audit_username" : 'admin',
-        "CONTROLLER_cli_password" : 'Admin!23',
+        "CONTROLLER_cli_password" : '',
         "CONTROLLER_cli_username" : 'admin',
-        "CONTROLLER_root_password" : 'Admin!23',
-        "CONTROLLER_ip_addresses" : "10.173.203.49",
-        "CONTROLLER_prefix_length" : 25,
+        "CONTROLLER_root_password" : '',
+        "CONTROLLER_ip_addresses" : None,
+        "CONTROLLER_prefix_length" : None,
         "CONTROLLER_default_gateway_addresses" : ['10.173.203.125'],
         "CONTROLLER_dns_servers" : ['10.172.40.1','10.172.40.2'],
-        "CONTROLLER_hostname" : "sc2hs1-stls-vm19.eng.vmware.com",
-        "CONTROLLER_ntp_servers_fqdn" : ["time.eng.vmware.com"],
+        "CONTROLLER_hostname" : None,
+        "CONTROLLER_ntp_servers_fqdn" : ['time.eng.vmware.com'],
         "CONTROLLER_form_factor" : 'MEDIUM'
     },
     "controller_2" :{
-        "CONTROLLER_datastore" :  "Shared-1",
-        "CONTROLLER_cluster" : "NSXT-MGMT",
-        "CONTROLLER_host" : "sc2-hs1-b2819.eng.vmware.com",
-        "CONTROLLER_management_network" : "VM-Traffic",
-        "CONTROLLER_audit_password" : 'Admin!23',
+        "CONTROLLER_datastore" :  None,
+        "CONTROLLER_cluster" : None,
+        "CONTROLLER_host" : None,
+        "CONTROLLER_management_network" : None,
+        "CONTROLLER_audit_password" : '',
         "CONTROLLER_audit_username" : 'admin',
-        "CONTROLLER_cli_password" : 'Admin!23',
+        "CONTROLLER_cli_password" : '',
         "CONTROLLER_cli_username" : 'admin',
-        "CONTROLLER_root_password" : 'Admin!23',
-        "CONTROLLER_ip_addresses" : "10.173.203.50",
-        "CONTROLLER_prefix_length" : 25,
+        "CONTROLLER_root_password" : '',
+        "CONTROLLER_ip_addresses" : None,
+        "CONTROLLER_prefix_length" : None,
         "CONTROLLER_default_gateway_addresses" : ['10.173.203.125'],
         "CONTROLLER_dns_servers" : ['10.172.40.1','10.172.40.2'],
-        "CONTROLLER_hostname" : "sc2hs1-stls-vm20.eng.vmware.com",
+        "CONTROLLER_hostname" : None,
         "CONTROLLER_ntp_servers_fqdn" : ['time.eng.vmware.com'],
         "CONTROLLER_form_factor" : 'MEDIUM'
     }
@@ -139,7 +139,7 @@ TRANSPORT_ZONES = {
 
 # Compute Collection Datacenter clusters. Clusyters to bE prepped.
 
-CLUSTER_LIST = ["cloud_cluster_1","cloud_cluster_2"]
+CLUSTER_LIST = []
 
 #Transport Nodes
 
@@ -150,19 +150,19 @@ TRANSPORT_NODE_NIC = "vmnic2"
 # Edge Details
 
 EDGE_SIZE = "MEDIUM"
-EDGE_HOSTNAME = "sc2hs1-stls-vm21.eng.vmware.com"
-EDGE_IP = "10.173.203.51"
-EDGE_NETWORK_PREFIX = 25   #Should be Integer
-EDGE_DEFAULT_GW = ["10.173.203.125"]
-EDGE_DNS_SERVERS = ["10.172.40.1","10.172.40.2"]
-EDGE_NTP_SERVERS = ["10.111.0.101"]  #The format should be IP adress not fqdn
+EDGE_HOSTNAME = ""
+EDGE_IP = ""
+EDGE_NETWORK_PREFIX = ""
+EDGE_DEFAULT_GW = []
+EDGE_DNS_SERVERS = []
+EDGE_NTP_SERVERS = []
 
-EDGE_DEPLOYMENT_DATACENTER = "Datacenter3"
-EDGE_DEPLOYMENT_CLUSTER_NAME=  "NSXT-MGMT"  #The Cluster in which the edge Appliance would be deployed. Not Same as EDGE_CLUSTER_NAME
-EDGE_DEPLOYMENT_HOST  = "sc2-hs1-b2819.eng.vmware.com" #The Host on which this edge will be deployed.
-EDGE_DATA_NETWORKS = ["VM-Traffic","VM-Traffic","VM-Traffic"]   # Atleast 3. Can be repetitive Foe example ["VM NETWORK","VM NETWORK","VM NETWORK"] . This must be present in EDGE_DEPLOYMENT_HOST
-EDGE_DATASTORE = "Shared-1"
-EDGE_MGMT_NETWORK = "VM-Traffic" #This must be present in EDGE_DEPLOYMENT_HOST
+EDGE_DEPLOYMENT_DATACENTER = ""
+EDGE_DEPLOYMENT_CLUSTER_NAME=  ""  #The Cluster in which the edge Appliance would be deployed. Not Same as EDGE_CLUSTER_NAME
+EDGE_DEPLOYMENT_HOST  = "" #The Host on which this edge will be deployed.
+EDGE_DATA_NETWORKS = []   # Atleast 3. Can be repetitive Foe example ["VM NETWORK","VM NETWORK","VM NETWORK"] . This must be present in EDGE_DEPLOYMENT_HOST
+EDGE_DATASTORE = ""
+EDGE_MGMT_NETWORK = "" #This must be present in EDGE_DEPLOYMENT_HOST
 
 
 
@@ -172,12 +172,12 @@ EDGE_MGMT_NETWORK = "VM-Traffic" #This must be present in EDGE_DEPLOYMENT_HOST
 
 #DHCP Deployment
 
-DHCP_SERVER_IP = "192.168.191.2/24" #CIDR Formatt Viz.192.168.191.2/24
-DHCP_POOL_START_IP = "192.168.191.90"
-DHCP_POOL_END_IP = "192.168.191.230"
-DHCP_GW_IP = "192.168.191.1"
+DHCP_SERVER_IP = "" #CIDR Formatt Viz.192.168.191.2/24
+DHCP_POOL_START_IP = ""
+DHCP_POOL_END_IP = ""
+DHCP_GW_IP = ""
 
-DHCP_SWITCH = "DHCP-Switch-0"
+DHCP_SWITCH = ""
 
 
 
