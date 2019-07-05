@@ -2,6 +2,8 @@
 
 This is an Automation Framework for NSX-T Automation.
 
+Tested only on 2.3
+
 
 ### Dependencies
 
