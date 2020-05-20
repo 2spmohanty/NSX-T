@@ -1,5 +1,5 @@
 cryptography==2.7
-httplib2==0.12.0
+httplib2==0.18.0
 paramiko==2.4.2
 pyvmomi==6.7.1.2018.12
 requests==2.22.0
